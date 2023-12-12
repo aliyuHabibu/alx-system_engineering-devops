@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(ls ~/*/action | du | wc -l)
