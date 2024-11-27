@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Script to count to 100 and print fizz, buzz and fizzbuzz instead of some numbers
 i=1
 while (( "$i" <= 100 ))
 do

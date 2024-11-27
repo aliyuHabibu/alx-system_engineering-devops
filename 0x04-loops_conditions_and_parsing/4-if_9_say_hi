@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Practising control flow
 i=0
 while (( "$i" <= 9 ))
 do

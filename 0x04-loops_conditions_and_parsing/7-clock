@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Script to print Time
 i=0
 while (( "$i" <= 12 ))
 do

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Script to get the content of the current directory and extract a file with name
 fileName=$(ls | cut -d'-' -f1 | grep school)
 if [ -e "$fileName" ]
 then

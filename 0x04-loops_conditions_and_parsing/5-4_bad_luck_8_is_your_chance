@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Script to count from 0-9 and print some statement incase of number on the way
 i=0
 while [ "$i" -le 9 ]
 do
