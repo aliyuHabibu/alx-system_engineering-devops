@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Practising control flow
 i=0
-while (( "$i" <= 9 ))
+while (( "$i" <= 10 ))
 do
 	if [ "$i" -eq $((2**3)) ]
 	then
