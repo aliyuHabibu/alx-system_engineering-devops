@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script to login into a server shell session
+ssh -i ~/.ssh/school ubuntu@54.167.146.172

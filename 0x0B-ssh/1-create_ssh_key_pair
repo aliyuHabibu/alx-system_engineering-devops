@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that create an ssh key pair with specifc bit length and passphrase
+ssh-keygen -b 4096 -f school -N betty -t rsa
