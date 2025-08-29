@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Starting the server
+service apache2 start
+
+# Editing hosts file
+sudo sed -i 'a\172.17.0.2	localhost' /etc/hosts
+
+# Making a new virtual host directory
+sudo mkdir /var/www/alxx.com
+echo "Hello ALX" > /var/www/alxx.com/index.html
+
+# Making virtual host
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/alxx.conf
+
+# Editing configuration file
+sudo sed -i 's//var/www/html//var/www/alx.com/g' /etc/apache2/sites-available/alxx.conf
+sudo sed -i '/DocumentRoot/a\	ServerName alx.com' /etc/apache2/sites-available/alxx.conf
+# sudo sed -i '/ServerName/a\ServerAlias www.alx.com' /etc/apache2/sites-available/alxx.conf
+
+# Enabling site
+sudo a2ensite alxx.conf
