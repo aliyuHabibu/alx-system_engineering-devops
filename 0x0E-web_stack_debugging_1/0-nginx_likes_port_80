@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A script to set up nginx web server
+
+# Updating system config
+sudo apt-get update -y
+
+# Upgrading system config
+sudo apt-get upgrade -y
+
+# Installing NGINX
+sudo apt-get install nginx -y
+
+# Starting the web server
+sudo service nginx start
+
